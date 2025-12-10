@@ -183,7 +183,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Yusuf Pratama**
+**Yoga Pratama**
 
 [![GitHub](https://img.shields.io/badge/GitHub-ypratama123-black?style=flat-square&logo=github)](https://github.com/ypratama123)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/ypratama123)
