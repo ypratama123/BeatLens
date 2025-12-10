@@ -11,7 +11,7 @@
 
 **BeatLens adalah aplikasi rekomendasi musik cerdas yang menggunakan Hybrid AI untuk memberikan rekomendasi lagu berdasarkan mood, genre, dan tempo yang Anda inginkan.**
 
-[🚀 Live Demo](https://beatlens.vercel.app) • [📖 Documentation](https://github.com/ypratama123/BeatLens/wiki) • [🐛 Report Bug](https://github.com/ypratama123/BeatLens/issues)
+[🚀 Live Demo](https://your-vercel-url.vercel.app) • [📖 API Docs](https://your-railway-url.up.railway.app/docs) • [🐛 Report Bug](https://github.com/ypratama123/BeatLens/issues)
 
 </div>
 
