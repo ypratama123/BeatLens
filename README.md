@@ -203,6 +203,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repository if you found it helpful!**
 
-Made with ❤️ by [Yusuf Pratama](https://github.com/ypratama123)
+Made with ❤️ by [Yoga Pratama](https://github.com/ypratama123)
 
 </div>
