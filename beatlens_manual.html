@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatLens - Manual Book</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .page-break { page-break-before: always; }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .cover {
+            text-align: center;
+            padding: 80px 0;
+            border-bottom: 3px solid #6366f1;
+            margin-bottom: 60px;
+        }
+        
+        .cover h1 {
+            font-size: 48px;
+            color: #6366f1;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .cover .subtitle {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .cover .version {
+            font-size: 16px;
+            color: #999;
+        }
+        
+        h2 {
+            color: #6366f1;
+            font-size: 32px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        h3 {
+            color: #4f46e5;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h4 {
+            color: #5b21b6;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .toc {
+            background: #f9fafb;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+            border: none;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .toc li {
+            padding: 8px 0;
+        }
+        
+        .toc a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        .feature-box {
+            background: #f0f9ff;
+            border-left: 4px solid #0ea5e9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .info-box {
+            background: #e0e7ff;
+            border-left: 4px solid #6366f1;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        
+        pre {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        pre code {
+            background: none;
+            color: #f9fafb;
+            padding: 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #6366f1;
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9fafb;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+            border-top: 2px solid #e5e7eb;
+            color: #666;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+        }
+        
+        .page-break {
+            margin: 60px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cover Page -->
+        <div class="cover">
+            <h1>📖 BeatLens</h1>
+            <div class="subtitle">Manual Book & User Guide</div>
+            <div class="version">Version 1.0 - 2025</div>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h2>Daftar Isi</h2>
+            <ul>
+                <li><a href="#pendahuluan">1. Pendahuluan</a></li>
+                <li><a href="#instalasi">2. Instalasi</a></li>
+                <li><a href="#cara-menggunakan">3. Cara Menggunakan</a></li>
+                <li><a href="#fitur-fitur">4. Fitur-Fitur</a></li>
+                <li><a href="#troubleshooting">5. Troubleshooting</a></li>
+                <li><a href="#faq">6. FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Section 1: Pendahuluan -->
+        <h2 id="pendahuluan">1. Pendahuluan</h2>
+
+        <h3>Apa itu BeatLens?</h3>
+        <p>BeatLens adalah aplikasi rekomendasi musik cerdas yang menggunakan teknologi Hybrid AI (Rule-based + K-Nearest Neighbors Machine Learning) untuk memberikan rekomendasi lagu yang sesuai dengan mood dan preferensi musik Anda.</p>
+
+        <h3>Fitur Utama</h3>
+        <div class="feature-box">
+            <ul>
+                <li><span class="emoji">🎭</span> <strong>5 Kategori Mood:</strong> Sedih, Happy, Galau, Chill, Semangat</li>
+                <li><span class="emoji">🎸</span> <strong>10+ Genre Musik:</strong> Pop, Rock, Indie, Ballad, EDM, dan lainnya</li>
+                <li><span class="emoji">🤖</span> <strong>AI-Powered:</strong> Algoritma KNN untuk rekomendasi yang akurat</li>
+                <li><span class="emoji">⚡</span> <strong>Cepat:</strong> Response time < 10ms</li>
+                <li><span class="emoji">📊</span> <strong>154+ Lagu:</strong> Database yang terus berkembang</li>
+            </ul>
+        </div>
+
+        <h3>Teknologi yang Digunakan</h3>
+        <ul>
+            <li><strong>Backend:</strong> Python, FastAPI, SQLite</li>
+            <li><strong>Frontend:</strong> Next.js, React, Tailwind CSS</li>
+            <li><strong>AI/ML:</strong> Scikit-learn, KNN Algorithm</li>
+            <li><strong>Integration:</strong> Spotify Web API</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <!-- Section 1.5: Tampilan Frontend Aplikasi -->
+        <h2>1.5 Tampilan Frontend Aplikasi</h2>
+        <p>Berikut adalah tampilan antarmuka BeatLens yang dirancang dengan desain modern dan user-friendly:</p>
+
+        <h3>Landing Page</h3>
+        <p>Halaman utama BeatLens menampilkan desain yang menarik dengan gradient background yang eye-catching. Di halaman ini, pengguna disambut dengan tagline aplikasi dan tombol "Mulai Sekarang" yang mengajak untuk memulai pencarian musik. Desain minimalis namun elegan membuat pengguna langsung tertarik untuk mencoba aplikasi.</p>
+        <img src="https://i.imgur.com/6sdki7C.png" alt="BeatLens Landing Page" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 20px 0;">
+
+        <h3>Mood Selection Page</h3>
+        <p>Setelah klik "Mulai Sekarang", pengguna akan masuk ke halaman pemilihan mood. Di sini tersedia 5 kategori mood yang dapat dipilih (Sedih, Happy, Galau, Chill, Semangat), lengkap dengan emoji yang merepresentasikan setiap mood. Pengguna juga bisa memilih genre musik spesifik dari dropdown menu untuk hasil rekomendasi yang lebih personal. Interface yang clean dan intuitif membuat proses pemilihan menjadi mudah dan menyenangkan.</p>
+        <img src="https://i.imgur.com/2YMxvgM.png" alt="Mood Selection Page" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 20px 0;">
+
+        <h3>Results Page</h3>
+        <p>Halaman hasil rekomendasi menampilkan daftar 10 lagu yang paling sesuai dengan mood dan genre yang dipilih. Setiap card lagu menampilkan informasi lengkap seperti judul lagu, nama artis, genre, mood, dan similarity score dalam bentuk persentase. Terdapat juga penjelasan singkat mengapa lagu tersebut direkomendasikan. Desain card yang rapi dengan spacing yang baik membuat informasi mudah dibaca. Tombol "Cari Lagi" di bagian atas memudahkan pengguna untuk kembali dan mencoba kombinasi mood/genre yang berbeda.</p>
+        <img src="https://i.imgur.com/BqTlmZd.png" alt="Results Page" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 20px 0;">
+
+        <h3>Spotify Integration</h3>
+        <p>Fitur unggulan BeatLens adalah integrasi langsung dengan Spotify. Setiap lagu yang direkomendasikan memiliki tombol "Dengarkan di Spotify" yang akan membuka lagu tersebut langsung di aplikasi atau web player Spotify. Ini memungkinkan pengguna untuk langsung mendengarkan preview 30 detik atau membuka full track di Spotify tanpa perlu mencari manual. Integrasi seamless ini membuat pengalaman pengguna menjadi lebih smooth dan efisien.</p>
+        <img src="https://i.imgur.com/yktTgsa.png" alt="Spotify Integration" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 20px 0;">
+
+        <div class="info-box">
+            <p><strong>💡 Tips Interface:</strong></p>
+            <ul>
+                <li>Desain responsive - dapat diakses dari desktop maupun mobile</li>
+                <li>Dark mode friendly dengan color scheme yang nyaman di mata</li>
+                <li>Smooth animations untuk transisi antar halaman</li>
+                <li>Loading indicators untuk feedback real-time</li>
+            </ul>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Section 2: Instalasi -->
+        <h2 id="instalasi">2. Instalasi</h2>
+
+        <h3>Persyaratan Sistem</h3>
+        <table>
+            <tr>
+                <th>Komponen</th>
+                <th>Requirement</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>3.8 atau lebih tinggi</td>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>16 atau lebih tinggi</td>
+            </tr>
+            <tr>
+                <td>npm</td>
+                <td>8 atau lebih tinggi</td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>Minimal 2GB</td>
+            </tr>
+            <tr>
+                <td>Storage</td>
+                <td>Minimal 500MB</td>
+            </tr>
+        </table>
+
+        <h3>Langkah Instalasi</h3>
+
+        <h4>A. Clone Repository</h4>
+        <pre><code>git clone https://github.com/ypratama123/BeatLens.git
+cd BeatLens</code></pre>
+
+        <h4>B. Setup Backend</h4>
+        <p><strong>1. Masuk ke folder backend</strong></p>
+        <pre><code>cd backend</code></pre>
+
+        <p><strong>2. Install dependencies</strong></p>
+        <pre><code>pip install -r requirements.txt</code></pre>
+
+        <p><strong>3. Inisialisasi database</strong></p>
+        <pre><code>python db/init_db.py</code></pre>
+
+        <p><strong>4. Jalankan server backend</strong></p>
+        <pre><code>python app.py</code></pre>
+
+        <div class="info-box">
+            Backend akan berjalan di: <code>http://localhost:8000</code>
+        </div>
+
+        <h4>C. Setup Frontend</h4>
+        <p><strong>1. Buka terminal baru, masuk ke folder frontend</strong></p>
+        <pre><code>cd frontend</code></pre>
+
+        <p><strong>2. Install dependencies</strong></p>
+        <pre><code>npm install</code></pre>
+
+        <p><strong>3. Jalankan development server</strong></p>
+        <pre><code>npm run dev</code></pre>
+
+        <div class="info-box">
+            Frontend akan berjalan di: <code>http://localhost:3000</code>
+        </div>
+
+        <h4>D. Verifikasi Instalasi</h4>
+        <ol>
+            <li><strong>Cek Backend:</strong> Buka <code>http://localhost:8000/health</code><br>
+                Harus menampilkan: <code>{"status": "healthy", "database": "connected"}</code></li>
+            <li><strong>Cek Frontend:</strong> Buka <code>http://localhost:3000</code><br>
+                Harus menampilkan halaman landing BeatLens</li>
+        </ol>
+
+        <div class="page-break"></div>
+
+        <!-- Section 3: Cara Menggunakan -->
+        <h2 id="cara-menggunakan">3. Cara Menggunakan</h2>
+
+        <h3>Langkah 1: Buka Aplikasi</h3>
+        <ol>
+            <li>Pastikan backend dan frontend sudah berjalan</li>
+            <li>Buka browser dan akses <code>http://localhost:3000</code></li>
+            <li>Anda akan melihat halaman landing BeatLens</li>
+        </ol>
+
+        <h3>Langkah 2: Mulai Mencari Rekomendasi</h3>
+        <ol>
+            <li>Klik tombol <strong>"Mulai Sekarang ✨"</strong></li>
+            <li>Anda akan diarahkan ke halaman pemilihan</li>
+        </ol>
+
+        <h3>Langkah 3: Pilih Mood</h3>
+        <p>Pilih mood yang sesuai dengan perasaan Anda saat ini:</p>
+        <ul>
+            <li><span class="emoji">😢</span> <strong>Sedih:</strong> Untuk saat-saat melankolis</li>
+            <li><span class="emoji">😊</span> <strong>Happy:</strong> Untuk suasana ceria</li>
+            <li><span class="emoji">💔</span> <strong>Galau:</strong> Untuk perasaan campur aduk</li>
+            <li><span class="emoji">😌</span> <strong>Chill:</strong> Untuk santai dan rileks</li>
+            <li><span class="emoji">💪</span> <strong>Semangat:</strong> Untuk motivasi dan energi</li>
+        </ul>
+
+        <h3>Langkah 4: Pilih Genre (Opsional)</h3>
+        <p>Jika ingin lebih spesifik, pilih genre favorit:</p>
+        <ul>
+            <li>Pop</li>
+            <li>Rock</li>
+            <li>Indie</li>
+            <li>Ballad</li>
+            <li>EDM</li>
+            <li>Acoustic</li>
+            <li>Lo-fi</li>
+            <li>Dan lainnya...</li>
+        </ul>
+
+        <h3>Langkah 5: Dapatkan Rekomendasi</h3>
+        <ol>
+            <li>Klik <strong>"Temukan Lagu 🎵"</strong></li>
+            <li>Sistem akan menganalisis preferensi Anda</li>
+            <li>Dalam hitungan detik, Anda akan mendapat <strong>10 rekomendasi lagu</strong></li>
+        </ol>
+
+        <h3>Langkah 6: Dengarkan Musik</h3>
+        <p>Setiap rekomendasi menampilkan:</p>
+        <ul>
+            <li>Judul lagu</li>
+            <li>Nama artis</li>
+            <li>Genre dan mood</li>
+            <li>Similarity score</li>
+            <li>Alasan rekomendasi</li>
+        </ul>
+        <p>Klik pada lagu untuk preview di Spotify (jika tersedia)</p>
+
+        <h3>Langkah 7: Cari Lagi</h3>
+        <ul>
+            <li>Klik tombol <strong>"← Cari Lagi"</strong> untuk mencoba kombinasi mood/genre lain</li>
+            <li>Eksplorasi berbagai kombinasi untuk menemukan lagu baru!</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <!-- Section 4: Fitur-Fitur -->
+        <h2 id="fitur-fitur">4. Fitur-Fitur</h2>
+
+        <h3>4.1 Sistem Rekomendasi Hybrid AI</h3>
+
+        <h4>Rule-Based Engine</h4>
+        <ul>
+            <li>Memfilter lagu berdasarkan aturan mood</li>
+            <li>Setiap mood memiliki preferensi genre dan tempo</li>
+            <li>Contoh: Mood "Sedih" → Genre: Indie, Ballad | Tempo: Slow, Medium</li>
+        </ul>
+
+        <h4>K-Nearest Neighbors (KNN)</h4>
+        <ul>
+            <li>Menghitung similarity antara preferensi user dan lagu</li>
+            <li>Menggunakan encoding untuk genre, mood, dan tempo</li>
+            <li>Mengurutkan hasil berdasarkan similarity score</li>
+        </ul>
+
+        <h3>4.2 Database Musik</h3>
+
+        <h4>Statistik Database</h4>
+        <ul>
+            <li><strong>Total Lagu:</strong> 154+</li>
+            <li><strong>Genre:</strong> 10 kategori</li>
+            <li><strong>Mood:</strong> 5 kategori</li>
+            <li><strong>Distribusi Seimbang:</strong> Setiap mood memiliki 25+ lagu</li>
+        </ul>
+
+        <h4>Contoh Lagu Populer</h4>
+        <ul>
+            <li><strong>Sedih:</strong> Someone Like You (Adele), Fix You (Coldplay)</li>
+            <li><strong>Happy:</strong> Blinding Lights (The Weeknd), Happy (Pharrell)</li>
+            <li><strong>Galau:</strong> Someone You Loved (Lewis Capaldi), Heather (Conan Gray)</li>
+            <li><strong>Chill:</strong> Weightless (Marconi Union), Holocene (Bon Iver)</li>
+            <li><strong>Semangat:</strong> Eye of the Tiger (Survivor), Believer (Imagine Dragons)</li>
+        </ul>
+
+        <h3>4.3 API Endpoints</h3>
+
+        <h4>Health Check</h4>
+        <pre><code>GET /health
+Response: {"status": "healthy", "database": "connected"}</code></pre>
+
+        <h4>Get Moods</h4>
+        <pre><code>GET /api/moods
+Response: {"moods": ["sedih", "happy", "galau", "chill", "semangat"]}</code></pre>
+
+        <h4>Get Genres</h4>
+        <pre><code>GET /api/genres
+Response: {"genres": ["pop", "rock", "indie", ...]}</code></pre>
+
+        <h4>Get Recommendations</h4>
+        <pre><code>POST /api/recommend
+Body: {
+  "mood": "happy",
+  "genre": "pop",  // optional
+  "k": 10
+}
+Response: {
+  "recommendations": [...],
+  "metadata": {
+    "count": 10,
+    "processing_time": 0.008
+  }
+}</code></pre>
+
+        <h3>4.4 Integrasi Spotify</h3>
+
+        <h4>Setup Spotify API (Opsional)</h4>
+        <ol>
+            <li>Buat aplikasi di <a href="https://developer.spotify.com/" target="_blank">Spotify Developer Dashboard</a></li>
+            <li>Copy Client ID dan Client Secret</li>
+            <li>Buat file <code>.env</code> di folder <code>backend</code>:
+                <pre><code>SPOTIFY_CLIENT_ID=your_client_id
+SPOTIFY_CLIENT_SECRET=your_client_secret</code></pre>
+            </li>
+            <li>Restart backend server</li>
+        </ol>
+
+        <h4>Fitur dengan Spotify</h4>
+        <ul>
+            <li>Preview musik 30 detik</li>
+            <li>Cover art album</li>
+            <li>Link langsung ke Spotify</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <!-- Section 5: Troubleshooting -->
+        <h2 id="troubleshooting">5. Troubleshooting</h2>
+
+        <h3>Masalah Umum dan Solusi</h3>
+
+        <h4>Backend Tidak Bisa Dijalankan</h4>
+
+        <div class="warning-box">
+            <p><strong>Error: "ModuleNotFoundError"</strong></p>
+            <pre><code># Solusi: Install ulang dependencies
+pip install -r requirements.txt</code></pre>
+        </div>
+
+        <div class="warning-box">
+            <p><strong>Error: "Database not found"</strong></p>
+            <pre><code># Solusi: Inisialisasi database
+python db/init_db.py</code></pre>
+        </div>
+
+        <div class="warning-box">
+            <p><strong>Error: "Port 8000 already in use"</strong></p>
+            <pre><code># Solusi: Matikan proses yang menggunakan port 8000
+# Windows:
+netstat -ano | findstr :8000
+taskkill /PID &lt;PID&gt; /F
+
+# Mac/Linux:
+lsof -ti:8000 | xargs kill -9</code></pre>
+        </div>
+
+        <h4>Frontend Tidak Bisa Dijalankan</h4>
+
+        <div class="warning-box">
+            <p><strong>Error: "npm command not found"</strong></p>
+            <p>Solusi: Install Node.js dari nodejs.org</p>
+        </div>
+
+        <div class="warning-box">
+            <p><strong>Error: "Module not found"</strong></p>
+            <pre><code># Solusi: Install ulang dependencies
+rm -rf node_modules
+npm install</code></pre>
+        </div>
+
+        <div class="warning-box">
+            <p><strong>Error: "Port 3000 already in use"</strong></p>
+            <pre><code># Solusi: Gunakan port lain
+npm run dev -- -p 3001</code></pre>
+        </div>
+
+        <h4>API Connection Failed</h4>
+        <div class="warning-box">
+            <p><strong>Error: "Failed to fetch" di browser console</strong></p>
+            <ul>
+                <li>Pastikan backend berjalan di <code>http://localhost:8000</code></li>
+                <li>Cek CORS settings di <code>backend/app.py</code></li>
+                <li>Test endpoint: <code>http://localhost:8000/health</code></li>
+            </ul>
+        </div>
+
+        <h4>Tidak Ada Rekomendasi</h4>
+        <div class="warning-box">
+            <p><strong>Pesan: "Maaf, belum ada lagu yang cocok"</strong></p>
+            <ul>
+                <li>Coba kombinasi mood/genre yang berbeda</li>
+                <li>Hapus filter genre (biarkan kosong)</li>
+                <li>Cek database: <code>python db/init_db.py</code></li>
+            </ul>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Section 6: FAQ -->
+        <h2 id="faq">6. FAQ (Frequently Asked Questions)</h2>
+
+        <h3>Q1: Apakah BeatLens gratis?</h3>
+        <p><strong>A:</strong> Ya, BeatLens sepenuhnya gratis dan open source.</p>
+
+        <h3>Q2: Apakah perlu koneksi internet?</h3>
+        <p><strong>A:</strong> Untuk menjalankan lokal, tidak perlu internet. Tapi untuk preview Spotify, perlu koneksi internet.</p>
+
+        <h3>Q3: Bagaimana cara menambah lagu baru?</h3>
+        <p><strong>A:</strong> Edit file <code>backend/db/seed_data.json</code>, tambahkan lagu baru dengan format:</p>
+        <pre><code>{
+  "title": "Judul Lagu",
+  "artist": "Nama Artis",
+  "genre": "pop",
+  "mood": "happy",
+  "tempo": "fast",
+  "spotify_id": "spotify_track_id"
+}</code></pre>
+        <p>Lalu jalankan: <code>python db/init_db.py</code></p>
+
+        <h3>Q4: Apakah bisa deploy ke production?</h3>
+        <p><strong>A:</strong> Ya! Lihat file <code>DEPLOYMENT_GUIDE.md</code> untuk panduan deployment ke Vercel, Railway, atau Render.</p>
+
+        <h3>Q5: Bagaimana cara mendapat Spotify ID?</h3>
+        <p><strong>A:</strong></p>
+        <ol>
+            <li>Buka lagu di Spotify Web Player</li>
+            <li>Klik "Share" → "Copy Song Link"</li>
+            <li>URL format: <code>https://open.spotify.com/track/SPOTIFY_ID</code></li>
+            <li>Ambil bagian <code>SPOTIFY_ID</code></li>
+        </ol>
+
+        <h3>Q6: Apakah data saya disimpan?</h3>
+        <p><strong>A:</strong> Tidak. BeatLens tidak menyimpan data personal atau riwayat pencarian Anda.</p>
+
+        <h3>Q7: Kenapa rekomendasi tidak sesuai?</h3>
+        <p><strong>A:</strong> Sistem AI terus belajar. Coba kombinasi mood/genre berbeda untuk hasil yang lebih sesuai.</p>
+
+        <h3>Q8: Apakah bisa digunakan offline?</h3>
+        <p><strong>A:</strong> Ya, untuk fitur rekomendasi. Tapi preview Spotify memerlukan internet.</p>
+
+        <h3>Q9: Bagaimana cara update aplikasi?</h3>
+        <p><strong>A:</strong></p>
+        <pre><code>git pull origin main
+cd backend && pip install -r requirements.txt
+cd ../frontend && npm install</code></pre>
+
+        <h3>Q10: Dimana saya bisa melaporkan bug?</h3>
+        <p><strong>A:</strong> Buat issue di GitHub: <a href="https://github.com/ypratama123/BeatLens/issues" target="_blank">https://github.com/ypratama123/BeatLens/issues</a></p>
+
+        <!-- Footer -->
+        <div class="footer">
+            <h3>Kontak & Support</h3>
+            <p>
+                <strong>GitHub:</strong> <a href="https://github.com/ypratama123/BeatLens" target="_blank">https://github.com/ypratama123/BeatLens</a><br>
+                <strong>Issues:</strong> <a href="https://github.com/ypratama123/BeatLens/issues" target="_blank">https://github.com/ypratama123/BeatLens/issues</a>
+            </p>
+            <p style="margin-top: 30px; font-size: 14px;">
+                <strong>Lisensi:</strong> BeatLens dilisensikan di bawah MIT License.
+            </p>
+            <p style="margin-top: 30px; font-size: 18px; color: #6366f1;">
+                <strong>Terima kasih telah menggunakan BeatLens! 🎵</strong>
+            </p>
+            <p style="margin-top: 10px; font-style: italic;">
+                Dibuat dengan ❤️ oleh Yoga Pratama
+            </p>
+        </div>
+    </div>
+</body>
+</html>
